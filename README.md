@@ -8,28 +8,37 @@ How to use
 3. Fill in variable values:
 
 interfaceName
+
 If you want to get the current address from the router's interface, then put the interface name into interfaceName variable in script, for example :local interfaceName "pppoe-out1". Otherwise, the script will try to get the address using external services.
 
-organizationId 
+organizationId
+
 Your organization ID (I'll describe how to get it later)
 
-domainName 
+domainName
+
 Your domain name
 
-dnsId 
+dnsId
+
 DNS record ID (I'll describe how to get it later)
 
-name 
+name
+
 Name of DNS record (@ - for root)
 
 ttl (optional)
+
 TTL for DNS record in seconds
 
-tokenOAuth 
+tokenOAuth
+
 Token obtained from step 1.
 
 4. (optional) Create scheduled task. WinBox: System -> Scheduler [Add]
+   
    On Event: /system script run <Script_name_created_in_step2>
+
 
 
 If you love this project, please consider giving me a ⭐
