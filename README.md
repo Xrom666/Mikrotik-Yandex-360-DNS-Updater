@@ -13,7 +13,7 @@ If you want to get the current address from the router's interface, then put the
 
 organizationId
 
-Your organization ID (I'll describe how to get it later)
+Your organization ID (Can get from Yandex360 admin panel)
 
 domainName
 
@@ -21,7 +21,11 @@ Your domain name
 
 dnsId
 
-DNS record ID (I'll describe how to get it later)
+DNS record ID
+To get it go to https://reqbin.com/ 
+Paste GET request https://api360.yandex.net/directory/v1/org/<YOUR_ORG_ID>/domains/<YOUR_DOMAIN>/dns/
+In Authorization tab paste Token obtained from step 1.
+You'll get all your DNS records from YandexDNS with IDs.
 
 name
 
